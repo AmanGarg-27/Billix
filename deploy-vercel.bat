@@ -1,2 +1,2 @@
 @echo off
-node deploy-vercel.js
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0deploy-vercel.ps1"

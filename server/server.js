@@ -389,7 +389,7 @@ app.put('/api/cart/share/:sessionId', async (req, res) => {
 // Serve static assets in production (when not running on Vercel)
 if (!process.env.VERCEL) {
   app.use(express.static(path.join(__dirname, '../dist')));
-  app.get('*', (req, res) => {
+  app.use((req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
   });
 }
