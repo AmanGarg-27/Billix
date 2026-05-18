@@ -18,7 +18,7 @@ echo.
 echo ⚡ Step 2: Deploying your full-stack app (Vite + Express) to Vercel...
 echo Building client bundle and preparing serverless routes...
 echo.
-cmd /c "npx vercel --prod --yes"
+cmd /c "npx vercel --prod"
 echo.
 echo ====================================================
 echo 🎉  DEPLOYMENT COMPLETED!                           
