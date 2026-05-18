@@ -3669,11 +3669,12 @@ const AuthScreen = ({ onLoginSuccess, appSettings }) => {
 
   return (
     <div style={{
-      minHeight: 'calc(100vh - 70px)',
+      minHeight: '100vh',
       display: 'flex',
+      flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center',
-      padding: '24px 16px 80px 16px',
+      justifyContent: 'flex-start',
+      padding: '70px 16px 80px 16px',
       position: 'relative',
       overflow: 'hidden'
     }}>
