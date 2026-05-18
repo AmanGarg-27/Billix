@@ -386,15 +386,17 @@ app.put('/api/cart/share/:sessionId', async (req, res) => {
   }
 });
 
-// Serve static assets in production
-app.use(express.static(path.join(__dirname, '../dist')));
-
-// Fallback all non-API GET requests to React's index.html
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/index.html'));
-});
+// Serve static assets in production (when not running on Vercel)
+if (!process.env.VERCEL) {
+  app.use(express.static(path.join(__dirname, '../dist')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../dist/index.html'));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT} (Listening on all interfaces)`);
 });
+
+module.exports = app;
