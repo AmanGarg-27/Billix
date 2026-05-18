@@ -4112,7 +4112,7 @@ const AuthScreen = ({ onLoginSuccess, appSettings }) => {
               <path fill="#FBBC05" d="M4.09 10.84c-.17-.52-.27-1.07-.27-1.64s.1-1.12.27-1.64L1.4 5.38C.5 7.17 0 9.19 0 11.2s.5 4.03 1.4 5.82l2.69-2.18z"/>
               <path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0 5.93 0 2.88 2.04 1.4 4.98l2.69 2.18C4.78 5.12 6.72 3.58 9 3.58z"/>
             </svg>
-            Sign in with google
+            Sign in with Google
           </motion.button>
         </div>
       </motion.div>
