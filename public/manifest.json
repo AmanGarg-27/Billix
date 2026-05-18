@@ -1,0 +1,22 @@
+{
+  "name": "Billix ZeroQueue",
+  "short_name": "Billix",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00c853",
+  "description": "Shop smarter with Billix. Scan products directly from the shelf and skip the queue.",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
